@@ -1,0 +1,17 @@
+CREATE TABLE `db_lab4`.`department` ( `department_id` INT(50) NOT NULL AUTO_INCREMENT , `department_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`department_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `db_lab4`.`professor` ( `professor_id` INT(50) NOT NULL AUTO_INCREMENT , `professor_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`professor_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `db_lab4`.`course` ( `course_id` INT(50) NOT NULL AUTO_INCREMENT , `course_name` VARCHAR(100) NOT NULL , `course_description` VARCHAR(255) NOT NULL , `department_id` INT(50) NOT NULL , `professor_id` INT(50) NOT NULL , PRIMARY KEY (`course_id`)) ENGINE = InnoDB;
+
+---
+INSERT INTO `department` (`department_id`, `department_name`) VALUES (NULL, 'Computer and communication'), (NULL, 'Construction and architecture'), (NULL, 'Biomedical engineering'), (NULL, 'Electro mechanical ')
+
+INSERT INTO `professor` (`professor_id`, `professor_name`) VALUES (NULL, 'amr abd elrazek'), (NULL, 'laila abo hadid'), (NULL, 'marawan torki'), (NULL, 'saleh shehabi'), (NULL, 'hicham el moungi'), (NULL, 'hassan el ragal'), (NULL, 'ahmed el terras'), (NULL, 'ahmed el nahas'), (NULL, 'ahmed salama'), (NULL, 'adel el fahar')
+
+INSERT INTO `course` (`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES (NULL, 'modern physics', 'This is description for modern physics course.', '3', '5'), (NULL, 'algorithms', 'This is description for algorithms course', '4', '7'), (NULL, 'operating systems', 'This is description for operating systems course', '1', '2'), (NULL, 'thermo dynamics', 'This is description for thermo dynamics course.', '4', '5'), (NULL, 'fluids', 'This is description for fluids course', '3', '6'), (NULL, 'biochemistry', 'This is description for biochemistry course', '3', '10'), (NULL, 'radiation biology', 'This is description for radiation biology', '3', '4'), (NULL, 'medical chemistry', 'This is description for medical chemistry', '3', '3')
+
+INSERT INTO `professor` (`professor_id`, `professor_name`) VALUES ('', 'maged naguib'), ('', 'said shebl'), ('', 'farouk elbarki'), ('', 'tharwat naguib'), ('', 'mervat mekhail'), ('', 'bassant'), ('', 'tamer helmy'), ('', 'mohamed zakaria'), ('', 'amr elmasry'), ('', 'magdy abd elazim')
+
+INSERT INTO `course` (`course_id`, `course_name`, `course_description`, `department_id`, `professor_id`) VALUES (NULL, 'Engineering graphics 1', 'This is description for Engineering graphics 1 course.', '2', '21'), (NULL, 'Engineering graphics 2', 'This is description for Engineering graphics 2 course.', '2', '22'), (NULL, 'mechanics 1', 'This is description for mechanics 1 course.', '4', '23'), (NULL, 'mechanics 2', 'This is description for mechanics 2 course.', '4', '24'), (NULL, 'math 2', 'This is description for math 2 course.', '3', '25'), (NULL, 'probability and statistics', 'This is description for probability and statistics course.', '3', '26'), (NULL, 'technical writing', 'This is description for technical writing course.', '4', '27'), (NULL, 'electronic circuits', 'This is description for electronic circuits course.', '4', '28'), (NULL, 'algorithms', 'This is description for algorithms course.', '1', '29'), (NULL, 'logic circuits 1', 'This is description for logic circuits 1 course.', '1', '30'), (NULL, 'logic circuits 2', 'This is description for logic circuits 2 course.', '1', '30')
+
